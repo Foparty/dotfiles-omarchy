@@ -1,0 +1,12 @@
+# OS-generated
+.DS_Store
+*.pyc
+
+# Logs/caches
+*.log
+cache/
+tmp/
+
+# Sensitive
+.env
+.ssh/
