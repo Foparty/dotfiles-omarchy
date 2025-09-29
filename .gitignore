@@ -1,12 +1,26 @@
-# OS-generated
+# Ignore everything in home directory by default
+*
+
+# Allow specific files/folders
+!.gitignore
+!.zshrc
+!.config/
+.config/*
+!.config/hypr/
+!.config/ghostty/
+
+# Additional common exclusions (just in case)
 .DS_Store
 *.pyc
-
-# Logs/caches
 *.log
-cache/
-tmp/
-
-# Sensitive
-.env
+.cache/
+.local/share/*
+Downloads/
+Desktop/
+Documents/
+Music/
+Pictures/
+Videos/
 .ssh/
+.env
+.pacman/
