@@ -8,6 +8,7 @@
 .config/*
 !.config/hypr/
 !.config/ghostty/
+!.config/yazi/
 
 # Additional common exclusions (just in case)
 .DS_Store
