@@ -24,6 +24,8 @@ alias jj="nvim"
 alias ll="NVIM_APPNAME=lazyvim nvim"
 alias nn="NVIM_APPNAME=neo nvim"
 alias la="ls -la"
+alias lt='eza --tree --level=2 --long --icons --git'
+alias lta='lt -a'
 alias gg="lazygit"
 alias ff="yazi"
 alias nv="cd ~/.config/nvim && nvim"
