@@ -20,7 +20,6 @@ setopt hist_expire_dups_first
 setopt hist_ignore_dups
 setopt hist_verify
 
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias jj="nvim"
 alias ll="NVIM_APPNAME=lazyvim nvim"
 alias nn="NVIM_APPNAME=neo nvim"
@@ -52,3 +51,15 @@ alias ls="eza --icons=always -l --colour=always"
 
 eval "$(zoxide init zsh)"
 alias cd="z"
+
+# Dotfiles management alias
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# Function to add, commit with custom message, and push dotfiles
+dotadd() {
+  dotfiles add .
+  echo "Enter commit message: "
+  read -r commit_message
+  dotfiles commit -m "$commit_message"
+  dotfiles push -u origin main
+}
