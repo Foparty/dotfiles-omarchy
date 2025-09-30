@@ -50,6 +50,7 @@ alias tn="tmux new -s"
 alias tls="tmux list-sessions"
 alias tk="tmux kill-session -t"
 alias sd="sudo shutdown -h now"
+alias record="wf-recorder -f ~/Videos/recording-$(date +%Y-%m-%d-%H%M%S).mkv"
 
 alias so="source ~/.zshrc"
 alias ls="eza --icons=always -l --colour=always"
