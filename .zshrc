@@ -1,5 +1,6 @@
 eval "$(starship init zsh)"
 source /usr/share/nvm/init-nvm.sh
+eval "$(rbenv init - zsh)"
 
 # fzf
 source /usr/share/fzf/key-bindings.zsh
@@ -69,3 +70,10 @@ dots() {
   dotfiles commit -m "$commit_message"
   dotfiles push -u origin main
 }
+
+# bun completions
+[ -s "/home/fo/.bun/_bun" ] && source "/home/fo/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
