@@ -24,7 +24,7 @@ font-family = "MonaspiceRn Nerd Font"
 # font-family = "MonaspiceRn Nerd Font"
 font-style-bold = "Medium"
 font-style-bold-italic = "Medium Italic"
-font-size = 9
+font-size = 12
 font-feature = liga
 cursor-color = orange
 
