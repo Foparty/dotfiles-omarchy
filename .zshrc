@@ -30,6 +30,8 @@ alias gg="lazygit"
 alias ff="yazi"
 alias nv="cd ~/.config/nvim && nvim"
 alias cc="cd ~/.config && nvim"
+alias hp="cd ~/.config/hypr && nvim"
+alias om="cd ~/.config/omarchy && nvim"
 alias c="code ."
 alias zz="zed ."
 alias j="z"
@@ -39,14 +41,15 @@ alias bd="bun dev"
 alias x="clear"
 alias xx="exit"
 alias ..="cd .."
-alias bi="(brew formulae; brew casks) | sort -u | fzf | xargs brew install"
-alias br="(brew list --formulae; brew list --casks) | sort -u | fzf | xargs brew uninstall"
-alias bu="brew upgrade"
+# alias bi="(brew formulae; brew casks) | sort -u | fzf | xargs brew install"
+# alias br="(brew list --formulae; brew list --casks) | sort -u | fzf | xargs brew uninstall"
+# alias bu="brew upgrade"
 alias res="cd ~/dev/restaurants/template && nvim"
 alias ta="tmux a"
 alias tn="tmux new -s"
 alias tls="tmux list-sessions"
 alias tk="tmux kill-session -t"
+alias sd="sudo shutdown -h now"
 
 alias so="source ~/.zshrc"
 alias ls="eza --icons=always -l --colour=always"
@@ -58,7 +61,7 @@ alias cd="z"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Function to add, commit with custom message, and push dotfiles
-dotadd() {
+dots() {
   dotfiles add .
   echo "Enter commit message: "
   read -r commit_message
